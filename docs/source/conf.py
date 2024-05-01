@@ -9,7 +9,7 @@
 project = 'HEK'
 copyright = '2024, Test'
 author = 'Test'
-release = '0.1'
+release = ''
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

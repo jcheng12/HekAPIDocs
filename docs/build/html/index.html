@@ -46,10 +46,10 @@
   
   
   
-    <title>Heliophysics Events Registry web API &#8212; HEK 0.1 documentation</title>
+    <title>HEK: Heliophysics Events Registry Web API &#8212; HEK  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=83e35b93" />
     <link rel="stylesheet" type="text/css" href="_static/material.css?v=79c92029" />
-    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -77,7 +77,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex navheader">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="#" title="HEK 0.1 documentation"
+        <a href="#" title="HEK  documentation"
            class="md-header-nav__button md-logo">
           
             &nbsp;
@@ -89,8 +89,8 @@
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          <span class="md-header-nav__topic">HEK 0.1 documentation</span>
-          <span class="md-header-nav__topic"> Heliophysics Events Registry web API </span>
+          <span class="md-header-nav__topic">HEK  documentation</span>
+          <span class="md-header-nav__topic"> HEK: Heliophysics Events Registry Web API </span>
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -146,7 +146,7 @@
   <nav class="md-tabs" data-md-component="tabs">
     <div class="md-tabs__inner md-grid">
       <ul class="md-tabs__list">
-          <li class="md-tabs__item"><a href="#" class="md-tabs__link">HEK 0.1 documentation</a></li>
+          <li class="md-tabs__item"><a href="#" class="md-tabs__link">HEK  documentation</a></li>
       </ul>
     </div>
   </nav>
@@ -158,13 +158,13 @@
               <div class="md-sidebar__inner">
                 <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="#" title="HEK 0.1 documentation" class="md-nav__button md-logo">
+    <a href="#" title="HEK documentation" class="md-nav__button md-logo">
       
         <img src="_static/" alt=" logo" width="48" height="48">
       
     </a>
     <a href="#"
-       title="HEK 0.1 documentation">HEK 0.1 documentation</a>
+       title="HEK documentation">HEK  documentation</a>
   </label>
   
 
@@ -179,13 +179,63 @@
 <nav class="md-nav md-nav--secondary">
     <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
-        <li class="md-nav__item"><a href="#index--page-root" class="md-nav__link">Heliophysics Events Registry web API</a><nav class="md-nav">
+        <li class="md-nav__item"><a href="#index--page-root" class="md-nav__link">HEK: Heliophysics Events Registry Web API</a><nav class="md-nav">
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#introduction" class="md-nav__link">Introduction</a>
         </li>
         <li class="md-nav__item"><a href="#querying-the-heliophysics-events-registry" class="md-nav__link">Querying the Heliophysics Events Registry</a><nav class="md-nav">
               <ul class="md-nav__list">
         <li class="md-nav__item"><a href="#simple-search-for-features-events-in-her" class="md-nav__link">Simple Search for Features/Events in HER</a>
+        </li>
+        <li class="md-nav__item"><a href="#customizing-searches-with-filters" class="md-nav__link">Customizing Searches with Filters</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#filters-on-attributes-of-type-string" class="md-nav__link">Filters on attributes of type string</a>
+        </li>
+        <li class="md-nav__item"><a href="#filters-on-attributes-of-type-boolean" class="md-nav__link">Filters on attributes of type boolean</a>
+        </li>
+        <li class="md-nav__item"><a href="#filters-on-attributes-of-type-integer-float" class="md-nav__link">Filters on attributes of type integer/float</a>
+        </li>
+        <li class="md-nav__item"><a href="#event-type-specific-filters" class="md-nav__link">Event Type Specific Filters</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#maximum-number-of-returned-results" class="md-nav__link">Maximum number of returned results</a>
+        </li>
+        <li class="md-nav__item"><a href="#sorting-result" class="md-nav__link">Sorting Result</a>
+        </li>
+        <li class="md-nav__item"><a href="#result-pagination" class="md-nav__link">Result Pagination</a>
+        </li>
+        <li class="md-nav__item"><a href="#output-format-of-queries" class="md-nav__link">Output format of queries</a>
+        </li>
+        <li class="md-nav__item"><a href="#note-about-bounding-chaincodes" class="md-nav__link">Note about Bounding Chaincodes</a>
+        </li>
+        <li class="md-nav__item"><a href="#viewing-test-events" class="md-nav__link">Viewing Test Events</a>
+        </li>
+        <li class="md-nav__item"><a href="#returning-a-limited-subset-of-parameters" class="md-nav__link">Returning a limited subset of parameters</a>
+        </li>
+        <li class="md-nav__item"><a href="#containment-search" class="md-nav__link">Containment search</a>
+        </li>
+        <li class="md-nav__item"><a href="#temporal-overlap-search" class="md-nav__link">Temporal Overlap Search</a>
+        </li>
+        <li class="md-nav__item"><a href="#summary-page-of-a-her-event-feature" class="md-nav__link">Summary Page of a HER Event/Feature</a>
+        </li>
+        <li class="md-nav__item"><a href="#retrieving-the-voevent-xml-of-a-her-event-feature" class="md-nav__link">Retrieving the VOEvent XML of a HER Event/Feature</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#authentication-and-post-authentication-methods" class="md-nav__link">Authentication and Post-authentication Methods</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#login" class="md-nav__link">Login</a>
+        </li>
+        <li class="md-nav__item"><a href="#rating-events" class="md-nav__link">Rating Events</a>
+        </li>
+        <li class="md-nav__item"><a href="#commenting-on-events" class="md-nav__link">Commenting on Events</a>
+        </li>
+        <li class="md-nav__item"><a href="#adding-a-reference-to-an-event" class="md-nav__link">Adding a reference to an event</a>
+        </li>
+        <li class="md-nav__item"><a href="#uploading-an-event-to-the-registry" class="md-nav__link">Uploading an event to the registry</a>
+        </li>
+        <li class="md-nav__item"><a href="#posting-a-revised-event-to-the-registry" class="md-nav__link">Posting a revised event to the registry</a>
         </li>
         <li class="md-nav__item"><a href="#reporting-relations-between-events-features" class="md-nav__link">Reporting relations between events/features</a>
         </li></ul>
@@ -207,8 +257,8 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  <section id="heliophysics-events-registry-web-api">
-<h1 id="index--page-root">Heliophysics Events Registry web API<a class="headerlink" href="#index--page-root" title="Link to this heading">¶</a></h1>
+  <section id="hek-heliophysics-events-registry-web-api">
+<h1 id="index--page-root">HEK: Heliophysics Events Registry Web API<a class="headerlink" href="#index--page-root" title="Link to this heading">¶</a></h1>
 <section id="introduction">
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
 <a class="reference internal image-reference" href="_images/HER_arch.jpg"><img alt="_images/HER_arch.jpg" src="_images/HER_arch.jpg" style="width: 600px;"/></a>
@@ -249,12 +299,268 @@ web application lets users query the Heliophysics Events Registry (HER) in an in
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmd</span><span class="o">=</span><span class="n">search</span><span class="o">&amp;</span><span class="nb">type</span><span class="o">=</span><span class="n">column</span><span class="o">&amp;</span><span class="n">event_type</span><span class="o">=</span><span class="n">ar</span><span class="p">,</span><span class="n">fl</span><span class="p">,</span><span class="n">ef</span><span class="o">&amp;</span><span class="n">event_starttime</span><span class="o">=</span><span class="mi">2007</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">29</span><span class="n">T00</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="o">&amp;</span><span class="n">event_endtime</span><span class="o">=</span><span class="mi">2007</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">07</span><span class="n">T00</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="o">&amp;</span><span class="n">event_coordsys</span><span class="o">=</span><span class="n">stonyhurst</span><span class="o">&amp;</span><span class="n">x1</span><span class="o">=-</span><span class="mi">180</span><span class="o">&amp;</span><span class="n">x2</span><span class="o">=</span><span class="mi">180</span><span class="o">&amp;</span><span class="n">y1</span><span class="o">=-</span><span class="mi">90</span><span class="o">&amp;</span><span class="n">y2</span><span class="o">=</span><span class="mi">90</span>
 </pre></div>
 </div>
-<p>To get query results in XML form, set cosec=1. To get JSON, set cosec=2 (this setting is needed for iSolSearch to render the results properly).</p>
+<p>To get query results in XML form, set <em>cosec=1</em>. To get JSON, set <em>cosec=2</em> (this setting is needed for iSolSearch to render the results properly).</p>
 <p>The query for this example with JSON output would then be:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>http://www.lmsal.com/hek/her?cosec=2&amp;cmd=search&amp;type=column&amp;event_type=ar,fl,ef&amp;event_starttime=2007-04-29T00:00:00&amp;event_endtime=2007-05-07T00:00:00&amp;event_coordsys=helioprojective&amp;x1=-1200&amp;x2=1200&amp;y1=-1200&amp;y2=1200
 </pre></div>
 </div>
-<p>To show the search results in iSolSearch, simply point your browser to the iSolSearch link with and passing the full query as a hek_query parameter. For instance, click here. Please note that iSolSearch requires cosec=2 type (JSON) format. Useful tools for inspecting JSON documents on the web are the Firefox Add-Ons JSONovich <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/10122">https://addons.mozilla.org/en-US/firefox/addon/10122</a> and JSONView <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/10869">https://addons.mozilla.org/en-US/firefox/addon/10869</a> (this one is recommended).</p>
+<p>To show the search results in iSolSearch, simply point your browser to the iSolSearch link with and passing the full query as a <em>hek_query</em> parameter. For instance, click here. Please note that iSolSearch requires cosec=2 type (JSON) format. Useful tools for inspecting JSON documents on the web are the Firefox Add-Ons JSONovich <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/10122">https://addons.mozilla.org/en-US/firefox/addon/10122</a> and JSONView <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/10869">https://addons.mozilla.org/en-US/firefox/addon/10869</a> (this one is recommended).</p>
+</section>
+<section id="customizing-searches-with-filters">
+<h3 id="customizing-searches-with-filters">Customizing Searches with Filters<a class="headerlink" href="#customizing-searches-with-filters" title="Link to this heading">¶</a></h3>
+<p>Searches can be customized with filters based on keywords. For a list of keywords/parameters for the various event and feature types, see <a class="reference external" href="http://www.lmsal.com/hek/VOEvent_Spec.html">http://www.lmsal.com/hek/VOEvent_Spec.html</a>. A filter is a triplet consisting of the Parameter name <strong>(param)</strong>, the comparison operation <strong>(op)</strong> and a value <strong>(value)</strong>.</p>
+<section id="filters-on-attributes-of-type-string">
+<h4 id="filters-on-attributes-of-type-string">Filters on attributes of type string<a class="headerlink" href="#filters-on-attributes-of-type-string" title="Link to this heading">¶</a></h4>
+<p>Suppose you wish to search for all events submitted by a particular Feature Recognition Method (FRM; could be person or a software code). The API allows you to specify the FRM_Name as a string. At present the API supports seven comparison operations for strings, namely <strong>=, != &gt;, &lt;, &gt;=, &lt;=</strong> and <strong>like</strong>.</p>
+<p>Greater than or less than operations on string values refers to alphabetical ordering.</p>
+<p>To specify the exact FRM_Name, simply append the following string to the query url:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">param0</span><span class="o">=</span><span class="n">FRM_Name</span><span class="o">&amp;</span><span class="n">op0</span><span class="o">==&amp;</span><span class="n">value0</span><span class="o">=</span><span class="n">Karel</span><span class="o">%</span><span class="mi">20</span><span class="n">Schrijver</span>
+</pre></div>
+</div>
+<p>The example above tells the API to limit results to those with FRM_Name matching <em>Karel Schrijver</em>. The strange looking string %20 is simply the url-escaped code for a whitespace.</p>
+<p>Instead of specify the exact string, one can also use a wildcard. For instance, if you wish to search for entries in the registry submitted by FRM’s with first name equal to Karel, use the <em>like</em> operator with a ‘%’ sign as a wildcard after <em>Karel</em>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">param0</span><span class="o">=</span><span class="n">FRM_Name</span><span class="o">&amp;</span><span class="n">op0</span><span class="o">=</span><span class="n">like</span><span class="o">&amp;</span><span class="n">value0</span><span class="o">=</span><span class="n">Karel</span><span class="o">%</span><span class="mi">25</span>
+</pre></div>
+</div>
+<p>The string %25 is simply the url-escaped code for a percent sign.</p>
+<p>To add a second filter, simply define another triplet. This time, the number after param, op and value is 1:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">param0</span><span class="o">=</span><span class="n">FRM_Name</span><span class="o">&amp;</span><span class="n">op0</span><span class="o">==&amp;</span><span class="n">value0</span><span class="o">=</span><span class="n">Karel</span><span class="o">%</span><span class="mi">20</span><span class="n">Schrijver</span><span class="o">&amp;</span><span class="n">param1</span><span class="o">=</span><span class="n">OBS_Observatory</span><span class="o">&amp;</span><span class="n">op1</span><span class="o">==&amp;</span><span class="n">value1</span><span class="o">=</span><span class="n">TRACE</span>
+</pre></div>
+</div>
+<p>These two filters limit search results to those events/features reported by Karel Schrijver using data from the TRACE observatory.</p>
+<p>The full query url for a search with these two filters for the time period October 2003 is then:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>http://www.lmsal.com/hek/her?cosec=2&amp;cmd=search&amp;type=column&amp;event_type=ar,fl,ef&amp;event_starttime=2003-10-01T00:00:00&amp;event_endtime=2003-11-01T00:00:00&amp;event_coordsys=helioprojective&amp;x1=-1200&amp;x2=1200&amp;y1=-1200&amp;y2=1200&amp;param0=FRM_Name&amp;op0==&amp;value0=Karel%20Schrijver&amp;param1=OBS_Observatory&amp;op1==&amp;value1=TRACE
+</pre></div>
+</div>
+<p>To see the results in iSolSearch, click on this <a class="reference external" href="http://www.lmsal.com/isolsearch?hek_query=http://www.lmsal.com/hek/her?cosec=2&amp;cmd=search&amp;type=column&amp;event_type=ar,fl,ef&amp;event_starttime=2003-10-01T00:00:00&amp;event_endtime=2003-11-01T00:00:00&amp;event_coordsys=helioprojective&amp;x1=-1200&amp;x2=1200&amp;y1=-1200&amp;y2=1200&amp;param0=FRM_Name&amp;op0==&amp;value0=Karel%20Schrijver&amp;param1=OBS_Observatory&amp;op1==&amp;value1=TRACE">link</a></p>
+<p>To find Flares with GOES class X and above, use this filter:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">param0</span><span class="o">=</span><span class="n">FL_GOESCls</span><span class="o">&amp;</span><span class="n">op0</span><span class="o">=%</span><span class="mi">3</span><span class="n">E</span><span class="o">&amp;</span><span class="n">value0</span><span class="o">=</span><span class="n">X</span>
+</pre></div>
+</div>
+<p>The string %3E is the url-escaped code for the <em>&gt;</em> character.</p>
+</section>
+<section id="filters-on-attributes-of-type-boolean">
+<h4 id="filters-on-attributes-of-type-boolean">Filters on attributes of type boolean<a class="headerlink" href="#filters-on-attributes-of-type-boolean" title="Link to this heading">¶</a></h4>
+<p>The API supports the equality <strong>(=)</strong> and inequality <strong>(!=)</strong> logical operations on attributes of type boolean.</p>
+<p>E.g., for attributes such as <em>FRM_HUMANFLAG</em>, one should set <em>op0==</em> and <em>value0=true</em>. Note that <em>value0=t</em> will not work if you want to get HER entries with true values for a particular boolean attribute.</p>
+</section>
+<section id="filters-on-attributes-of-type-integer-float">
+<h4 id="filters-on-attributes-of-type-integer-float">Filters on attributes of type integer/float<a class="headerlink" href="#filters-on-attributes-of-type-integer-float" title="Link to this heading">¶</a></h4>
+<p>The API supports six comparison operations for such attributes, namely <strong>=, !=, &gt;, &lt;, &gt;= and &lt;=</strong>. For example, to get Active Regions with NOAA number between 10930 and 10934 (inclusive), use the following filter:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">param0</span><span class="o">=</span><span class="n">AR_NOAANum</span><span class="o">&amp;</span><span class="n">op0</span><span class="o">=%</span><span class="mi">3</span><span class="n">E</span><span class="o">=&amp;</span><span class="n">value0</span><span class="o">=</span><span class="mi">10930</span><span class="o">&amp;</span><span class="n">param1</span><span class="o">=</span><span class="n">AR_NOAANum</span><span class="o">&amp;</span><span class="n">op1</span><span class="o">=%</span><span class="mi">3</span><span class="n">C</span><span class="o">=&amp;</span><span class="n">value1</span><span class="o">=</span><span class="mi">10934</span>
+</pre></div>
+</div>
+<p>One can learn to add filters to queries in <a class="reference external" href="https://www.lmsal.com/isolsearch">iSolSearch</a> by click on the <em>Filters</em> tab.</p>
+</section>
+<section id="event-type-specific-filters">
+<h4 id="event-type-specific-filters">Event Type Specific Filters<a class="headerlink" href="#event-type-specific-filters" title="Link to this heading">¶</a></h4>
+<p>The API also supports filtering results based on only some of the event types selected. This allows the user to use a different value per event type if so desired, rather than the same value for all event types requested. Please ensure that the event type you are filtering off is in the list of event types you are requesting, or that <em>event_type*=*</em>. If not, an error will be returned. Suppose one wants active region (ar), coronal mass ejection (ce), coronal hole (ch) and coronal jet (cj) events returned but with coronal holes that are greater than 10000 Mm2 (areas are stored in km2), one could use the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmd</span><span class="o">=</span><span class="n">search</span><span class="o">&amp;</span><span class="nb">type</span><span class="o">=</span><span class="n">column</span><span class="o">&amp;</span><span class="n">event_type</span><span class="o">=</span><span class="n">ar</span><span class="p">,</span><span class="n">ce</span><span class="p">,</span><span class="n">ch</span><span class="p">,</span><span class="n">cj</span><span class="p">,</span><span class="o">&amp;</span><span class="n">event_region</span><span class="o">=</span><span class="nb">all</span><span class="o">&amp;</span><span class="n">event_coordsys</span><span class="o">=</span><span class="n">helioprojective</span><span class="o">&amp;</span><span class="n">x1</span><span class="o">=-</span><span class="mi">5000</span><span class="o">&amp;</span><span class="n">x2</span><span class="o">=</span><span class="mi">5000</span><span class="o">&amp;</span><span class="n">y1</span><span class="o">=-</span><span class="mi">5000</span><span class="o">&amp;</span><span class="n">y2</span><span class="o">=</span><span class="mi">5000</span><span class="o">&amp;</span><span class="n">result_limit</span><span class="o">=</span><span class="mi">40</span><span class="o">&amp;</span><span class="n">event_starttime</span><span class="o">=</span><span class="mi">2003</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">01</span><span class="n">T00</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="o">&amp;</span><span class="n">event_endtime</span><span class="o">=</span><span class="mi">2003</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">01</span><span class="n">T00</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="o">&amp;</span><span class="n">param0</span><span class="o">=</span><span class="n">ch</span><span class="o">.</span><span class="n">area_atdiskcenter</span><span class="o">&amp;</span><span class="n">op0</span><span class="o">=&gt;&amp;</span><span class="n">value0</span><span class="o">=</span><span class="mf">1e10</span>
+</pre></div>
+</div>
+<p>Only coronal holes that have the area_atdiskcenter value greater than 10000 Mm2 will be returned, while for the other event types, all events within the stated start/end time and region will be returned. Please note that if a filter parameter is given without specifying a particular event type, then it will be applied to all event types requested. Also, if only one event type is selected, there is no need to specify the event type when entering filter parameters.</p>
+</section>
+</section>
+<section id="maximum-number-of-returned-results">
+<h3 id="maximum-number-of-returned-results">Maximum number of returned results<a class="headerlink" href="#maximum-number-of-returned-results" title="Link to this heading">¶</a></h3>
+<p>By default the maximum number of results given a query is 100. To change this limit, set:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result_limit</span><span class="o">=</span><span class="n">Num</span>
+</pre></div>
+</div>
+<p>where <em>Num</em> is the maximum number of results to return. There is a currently a hard limit of 1000 results. In other words, specifying a value of 1500 will return 1000 results maximum. The results are returned sorted in chronological order (ascending, based on event_starttime). To avoid unreasonably time-consuming requests from hoarding API resources, a search will timeout after 60s. In that case, please breakup you query into small chunks and perform searches incrementally.</p>
+</section>
+<section id="sorting-result">
+<h3 id="sorting-result">Sorting Result<a class="headerlink" href="#sorting-result" title="Link to this heading">¶</a></h3>
+<p>By default the results are sorted by event_starttime in an ascending order. To change these, set:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sort_by</span><span class="o">=</span><span class="n">value</span> <span class="n">sort_order</span><span class="o">=</span><span class="n">order</span>
+</pre></div>
+</div>
+<p>where value is the valid field name by which you’d like to sort and order is either ASC or DESC. One or both of these can be omitted, in which case the defaults will be used.</p>
+</section>
+<section id="result-pagination">
+<h3 id="result-pagination">Result Pagination<a class="headerlink" href="#result-pagination" title="Link to this heading">¶</a></h3>
+<p>The number of results returned depend on the value for result_limit. To request additional results, set:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">page</span><span class="o">=</span><span class="n">page_number</span>
+</pre></div>
+</div>
+<p>where <em>page_number</em> is the integer page number that the user would like. When used it conjunction with result_limit, one can request events in smaller chunks, or simply get around the hard maximum that is imposed on a single query. If there are additional results, overmax will be set to true. When the last page is reached, overmax will be set to false. The default is to return the first page.</p>
+</section>
+<section id="output-format-of-queries">
+<h3 id="output-format-of-queries">Output format of queries<a class="headerlink" href="#output-format-of-queries" title="Link to this heading">¶</a></h3>
+<p>To get query results in XML form, include the string <em>&amp;cosec=1</em> in the query url. To get JSON, use <em>&amp;cosec=2</em>.</p>
+<p>The xml output is looks like this:</p>
+<a class="reference internal image-reference" href="_images/cosec1output.jpg"><img alt="_images/cosec1output.jpg" src="_images/cosec1output.jpg" style="width: 600px;"/></a>
+<p>The JSON output looks like this:</p>
+<a class="reference internal image-reference" href="_images/cosec2output.jpg"><img alt="_images/cosec2output.jpg" src="_images/cosec2output.jpg" style="width: 600px;"/></a>
+<p>If JSON output is requested, an optional parameter can be specified in the url to wrap the JSON with a call to a Javascript callback function. For instance, suppose the web client you are developing requests JSON from HER. If you want to handle the JSON with some function, say it’s named <em>processJSON</em>, then simply provide the optional parameter ‘callback=processJSON’ in the query url. With this option, the output will have the string <em>processJSON( );</em> wrapped around the JSON.</p>
+</section>
+<section id="note-about-bounding-chaincodes">
+<h3 id="note-about-bounding-chaincodes">Note about Bounding Chaincodes<a class="headerlink" href="#note-about-bounding-chaincodes" title="Link to this heading">¶</a></h3>
+<p>When an event/feature such as a Coronal Hole is imported into the HER, its bounding chaincode (if available) is converted into Heliographic Carrington, Heliographic Stonyhurst and Helioprojective coordinate systems irrespective of the original coordinate system in which the event coordinates are given. When a HER query is returned, the default JSON and/or XML output provides the bounding chaincodes as the following attributes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HGS_BOUNDCC</span><span class="p">,</span> <span class="n">HGC_BOUNDCC</span><span class="p">,</span> <span class="n">HPC_BOUNDCC</span><span class="p">,</span> <span class="n">HRC_BOUNDCC</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>corresponding to the HGS (Heliographic Stonyhurst), HGC (Heliographic Carrington), HPC (Helioprojective Cartesian) and HRC (Helioprojective Radial + Position Angle) coordinate systems respectively. In all four cases, the attribute will contain a text string in the format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">''</span><span class="n">POLYGON</span><span class="p">((</span><span class="n">x0</span> <span class="n">y0</span><span class="p">,</span> <span class="n">x1</span> <span class="n">y1</span><span class="p">,</span> <span class="o">...</span> <span class="p">,</span> <span class="n">xn</span> <span class="n">yn</span><span class="p">))</span><span class="s1">''</span>
+</pre></div>
+</div>
+<p>where the coordinate pairs are delimited by commas. For HGS, the x and y coordinates correspond to distances from disk center (from the Earth’s perspective) in arcsec. For HGS and HGC, the x and y coordinates correspond to latitude and longitude in degrees. For HRC, the x and y coordinates correspond to radius (in units of the solar radius) and positive angle (in deg, measured counterclockwise from the north).</p>
+</section>
+<section id="viewing-test-events">
+<h3 id="viewing-test-events">Viewing Test Events<a class="headerlink" href="#viewing-test-events" title="Link to this heading">¶</a></h3>
+<p>For internal testing purposes, fake test events are regularly generated. To view these, one can add the following string to the url, where <em>value</em> is one of the following:</p>
+<table>
+<colgroup>
+<col style="width: 13.0%"/>
+<col style="width: 87.0%"/>
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>hide</p></td>
+<td><p>show only non-test events (default)</p></td>
+</tr>
+<tr class="row-even"><td><p>only</p></td>
+<td><p>show only test events</p></td>
+</tr>
+<tr class="row-odd"><td><p>show</p></td>
+<td><p>show both test and non-test events</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">showtests</span><span class="o">=</span><span class="n">value</span>
+</pre></div>
+</div>
+</section>
+<section id="returning-a-limited-subset-of-parameters">
+<h3 id="returning-a-limited-subset-of-parameters">Returning a limited subset of parameters<a class="headerlink" href="#returning-a-limited-subset-of-parameters" title="Link to this heading">¶</a></h3>
+<p>By default, search results contain information about all the parameters that are either required or optional. If only most basic (required) parameters are needed, one can add the following string to the url:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="k">return</span><span class="o">=</span><span class="n">required</span>
+</pre></div>
+</div>
+<p>Additionally, one can specify a comma delimited list of parameters to be returned. The list of accepted parameters can be found on the <a class="reference external" href="https://www.lmsal.com/hek/VOEvent_Spec.html">Knowledgebase Feature And Event Definitions page</a>. Additionally, if references are desired, one can pass “refs” in the parameter list. Please note that a comma delimited list of parameters cannot be mixed with “required” or “optional”. If these are mixed, only the valid parameters in the comma delimited list will be returned. Thus, one essentially has four choice:</p>
+<ol class="arabic simple">
+<li><p>All - omit &amp;return</p></li>
+<li><p>Required - &amp;return=required</p></li>
+<li><p>Optional - &amp;return=optional</p></li>
+<li><p>List of parameters - &amp;return=param1,param2,param3,…</p></li>
+</ol>
+<p>All values passed are case insensitive. The following is an example of using a comma delimited list of parameters:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="k">return</span><span class="o">=</span><span class="n">kb_archivid</span><span class="p">,</span><span class="n">hpc_x</span><span class="p">,</span><span class="n">hpc_y</span><span class="p">,</span><span class="n">refs</span>
+</pre></div>
+</div>
+</section>
+<section id="containment-search">
+<h3 id="containment-search">Containment search<a class="headerlink" href="#containment-search" title="Link to this heading">¶</a></h3>
+<p>This search function allows the user to find events which a located within another event (both in time and space). Suppose you want to find Active Regions inside Coronal Holes. In order to do this, set:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmd</span><span class="o">=</span><span class="n">search</span><span class="o">&amp;</span><span class="nb">type</span><span class="o">=</span><span class="n">contains</span>
+</pre></div>
+</div>
+<p>in the query url. This tells the API that you want to do a containment search instead of a ‘column’ type search (examples in previous sections). In the url, set:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">event_type1</span><span class="o">=</span><span class="n">ar</span><span class="o">&amp;</span><span class="n">event_type2</span><span class="o">=</span><span class="n">ch</span>
+</pre></div>
+</div>
+<p>and as usual, specify the event_starttime and event_endtime parameters. An example of an AR-in-CH search is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>http://www.lmsal.com/hek/her?cosec=2&amp;cmd=search&amp;type=contains&amp;event_type1=ar&amp;event_type2=ch&amp;event_starttime=2003-10-23T00:00:00&amp;event_endtime=2003-10-29T00:00:00
+</pre></div>
+</div>
+<p>Clickable link for the JSON is <a class="reference external" href="https://www.lmsal.com/hek/her?cosec=2&amp;cmd=search&amp;type=contains&amp;event_type1=ar&amp;event_type2=ch&amp;event_starttime=2003-10-23T00:00:00&amp;event_endtime=2003-10-29T00:00:00">here</a>. To render these results in iSolSearch, click <a class="reference external" href="http://www.lmsal.com/isolsearch?hek_query=https://www.lmsal.com/hek/her?cosec=2&amp;cmd=search&amp;type=contains&amp;event_type1=ar&amp;event_type2=ch&amp;event_starttime=2003-10-23T00:00:00&amp;event_endtime=2003-10-29T00:00:00">here</a>.</p>
+<p>An example of an FL-in-CH search (for the same time period) is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>http://www.lmsal.com/hek/her?cosec=2&amp;cmd=search&amp;type=contains&amp;event_type1=fl&amp;event_type2=ch&amp;event_starttime=2003-10-23T00:00:00&amp;event_endtime=2003-10-29T00:00:00
+</pre></div>
+</div>
+<p>Clickable link for the JSON is <a class="reference external" href="https://www.lmsal.com/hek/her?cosec=2&amp;cmd=search&amp;type=contains&amp;event_type1=fl&amp;event_type2=ch&amp;event_starttime=2003-10-23T00:00:00&amp;event_endtime=2003-10-29T00:00:00">here</a>. To render these results in iSolSearch, click <a class="reference external" href="http://www.lmsal.com/isolsearch?hek_query=https://www.lmsal.com/hek/her?cosec=2&amp;cmd=search&amp;type=contains&amp;event_type1=fl&amp;event_type2=ch&amp;event_starttime=2003-10-23T00:00:00&amp;event_endtime=2003-10-29T00:00:00">here</a>.</p>
+<p>The exact mechanics of the containment search are as follows:</p>
+<ol class="arabic simple">
+<li><p>Find events of event_type1 and event_type2 that are completely contained within the time period between event_starttime to event_endtime. A default tolerance of 8 hours is used so that if event1 has an event_starttime within 8 hours of the event_starttime of event2, they are considered to be cotemporal.</p></li>
+<li><p>If event_type2 has a bounding polygon (e.g. Coronal Holes have CH boundaries), then find events of event_type1 whose central coordinate position (in Carrington coordinates) lies within the bounded area of instances of event_type2. Although temporal overlap is not strictly enforced, the instances of event_type1 and event_type2 must occur sufficiently close in time.</p></li>
+<li><p>If event_type2 does not have a bounding chaincode, use the bounding box coordinates (Carrington) to define a polygon that acts as a proxy for its bounding chaincode.</p></li>
+</ol>
+<p>The JSON (for cosec=2) output returned provides instances of event_type1 and event_type2 that satisfy the search criteria in an array called ‘results’ (same format as output for simple queries). Furthermore, the relations between the returned events are given as an array called ‘associations’. Each element in the ‘associations’ array contains information about the event types as well as their VOEvent IVORNs (unique labels for VOEvents). The ‘results’ and ‘associations’ arrays can be respectively thought of as nodes and edges of a graph.</p>
+</section>
+<section id="temporal-overlap-search">
+<h3 id="temporal-overlap-search">Temporal Overlap Search<a class="headerlink" href="#temporal-overlap-search" title="Link to this heading">¶</a></h3>
+<p>The default search behavior returns events that partially overlap the time interval between event_starttime and event_endtime. To find events that only are strictly contained in the time interval, append the argument:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">temporalmode</span><span class="o">=</span><span class="n">strict</span>
+</pre></div>
+</div>
+<p>This is a simpler query so it may run a bit faster.</p>
+</section>
+<section id="summary-page-of-a-her-event-feature">
+<h3 id="summary-page-of-a-her-event-feature">Summary Page of a HER Event/Feature<a class="headerlink" href="#summary-page-of-a-her-event-feature" title="Link to this heading">¶</a></h3>
+<p>Each event/feature in HER has a unique label, which is also known as its VOEvent IVORN (look for <em>kb_archivid</em> parameter in the search results output). Let says, an entry has an <em>kb_archivid</em> of <em>ivo://helio-informatics.org/FA1550_YingnaSu_20090415_154655</em>. To view the summary page of the event, set:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmd</span><span class="o">=</span><span class="n">view</span><span class="o">-</span><span class="n">voevent</span><span class="o">&amp;</span><span class="n">ivorn</span><span class="o">=</span><span class="n">ivo</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="o">-</span><span class="n">ivorn</span>
+</pre></div>
+</div>
+<p>Following is an actual example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>http://www.lmsal.com/hek/her?cmd=view-voevent&amp;ivorn=ivo://helio-informatics.org/FA1550_YingnaSu_20090415_154655
+</pre></div>
+</div>
+<p>Clickable link is <a class="reference external" href="http://www.lmsal.com/hek/her?cmd=view-voevent&amp;ivorn=ivo://helio-informatics.org/FA1550_YingnaSu_20090415_154655">here</a>.</p>
+</section>
+<section id="retrieving-the-voevent-xml-of-a-her-event-feature">
+<h3 id="retrieving-the-voevent-xml-of-a-her-event-feature">Retrieving the VOEvent XML of a HER Event/Feature<a class="headerlink" href="#retrieving-the-voevent-xml-of-a-her-event-feature" title="Link to this heading">¶</a></h3>
+<p>To get the VOEvent XML of an entry, use the <a class="reference external" href="http://www.lmsal.com/hek/her?cmd=export-voevent&amp;cosec=1&amp;ivorn=ivo://helio-informatics.org/FA1550_YingnaSu_20090415_154655">link</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>http://www.lmsal.com/hek/her?cmd=export-voevent&amp;cosec=1&amp;ivorn=ivo://helio-informatics.org/FA1550_YingnaSu_20090415_154655
+</pre></div>
+</div>
+<p>where the value of ivorn is the parameter given as ‘kb_archivid (look for it in the search results output).</p>
+</section>
+</section>
+<section id="authentication-and-post-authentication-methods">
+<h2 id="authentication-and-post-authentication-methods">Authentication and Post-authentication Methods<a class="headerlink" href="#authentication-and-post-authentication-methods" title="Link to this heading">¶</a></h2>
+<p>All services that permanently edit the knowledgebase require authentication via your Heliophysics Knowledgebase (HPKB) account. To register for an account, go to <a class="reference external" href="http://www.lmsal.com/hpkb/Nav">http://www.lmsal.com/hpkb/Nav</a> and click on <strong>Registration</strong>.</p>
+<section id="login">
+<h3 id="login">Login<a class="headerlink" href="#login" title="Link to this heading">¶</a></h3>
+<p>Login is done via an HTTPS POST request, and session is maintained via an HTTP cookie. Make sure the command line tool curl (<a class="reference external" href="http://curl.haxx.se/">http://curl.haxx.se/</a>) is installed. The login can be accomplished via:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cookiemonster</span><span class="o">/</span><span class="n">cookiejar</span><span class="o">.</span><span class="n">txt</span> <span class="o">-</span><span class="n">d</span> <span class="n">username</span><span class="o">=</span><span class="n">YourUsername</span> <span class="o">-</span><span class="n">d</span> <span class="n">password</span><span class="o">=</span><span class="n">YourPassword</span> <span class="o">-</span><span class="n">d</span> <span class="n">cmd</span><span class="o">=</span><span class="n">login</span> <span class="o">-</span><span class="n">d</span> <span class="n">cosec</span><span class="o">=</span><span class="mi">1</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">lmsal</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">hek</span><span class="o">/</span><span class="n">her</span><span class="o">/</span><span class="n">heks</span>
+</pre></div>
+</div>
+<p>In order for a cookie to be retrieved, be sure to use <em>cosec=1</em>. <strong>NOTE:</strong> Please ensure the directory /Users/home/cookiemonster/ exists or use another directory with appropriate write privileges. The cookiejar.txt file will be created only if the directory already exists.</p>
+<p>The previous call will return either a “login failure” or a “login success” message. Once you are logged in, you can use any of the services below as long as you send the cookie received after login (in this example, /Users/home/cookiemonster/cookiejar.txt).</p>
+<p>All of them operate on HTTPS POST. For example, a comment can be added via:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">b</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cookiemonster</span><span class="o">/</span><span class="n">cookiejar</span><span class="o">.</span><span class="n">txt</span> <span class="o">-</span><span class="n">d</span> <span class="n">cmd</span><span class="o">=</span><span class="n">comment</span> <span class="o">-</span><span class="n">d</span> <span class="n">ivorn</span><span class="o">=</span><span class="n">TARGET_EVENT_IVORN</span> <span class="o">-</span><span class="n">d</span> <span class="n">comment</span><span class="o">=</span><span class="n">YOUR_COMMENT</span> <span class="o">-</span><span class="n">d</span> <span class="n">cosec</span><span class="o">=</span><span class="mi">2</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">lmsal</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">hek</span><span class="o">/</span><span class="n">her</span><span class="o">/</span><span class="n">heks</span>
+</pre></div>
+</div>
+</section>
+<section id="rating-events">
+<h3 id="rating-events">Rating Events<a class="headerlink" href="#rating-events" title="Link to this heading">¶</a></h3>
+<p>To rate an event, use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>https://www.lmsal.com/hek/her/heks?cmd=rate&amp;ivorn=event_ivorn&amp;rating=XXX&amp;cosec=2
+</pre></div>
+</div>
+<p>where event_ivorn is the ivorn of the event you wish to rate, and XXX is the rating, a number between 0 and 1. The output is returned in JSON format, with the “status” parameter indicating “success” or “permission denied”. The user must be logged in to use this command. A user may rate an event multiple times but can only have one rating per event - multiple submissions will overwrite each other. One can use the id of the event instead of the ivorn if so desired by using idspecial=id_of_event. Also, one can specify a particular revision by adding revision=revision_number.</p>
+</section>
+<section id="commenting-on-events">
+<h3 id="commenting-on-events">Commenting on Events<a class="headerlink" href="#commenting-on-events" title="Link to this heading">¶</a></h3>
+<p>To comment on an event, use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>https://www.lmsal.com/hek/her/heks?cmd=comment&amp;ivorn=event_ivorn&amp;comment=XXX&amp;cosec=2
+</pre></div>
+</div>
+<p>where event_ivorn is the ivorn of the event you wish to rate, and XXX is the comment. The output is returned in JSON format, with the “status” parameter indicating “success”, “permission denied”, or “error”. The user must be logged in to use this command. Also, one can retrieve the existing comments by using the same url, without the comment parameter. The user does not need to be logged in to retrieve comments. One can use the id of the event instead of the ivorn if so desired by using idspecial=id_of_event. Also, one can specify a particular revision by adding revision=revision_number.</p>
+</section>
+<section id="adding-a-reference-to-an-event">
+<h3 id="adding-a-reference-to-an-event">Adding a reference to an event<a class="headerlink" href="#adding-a-reference-to-an-event" title="Link to this heading">¶</a></h3>
+<p>To add a reference to an event, use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>https://www.lmsal.com/hek/her/heks?cmd=add-reference&amp;ivorn=event_ivorn&amp;name=XXX&amp;type=YYY&amp;url=ZZZ&amp;cosec=2
+</pre></div>
+</div>
+<p>where event_ivorn is the ivorn of the event you wish to rate, XXX is the reference name, YYY is the reference type, and ZZZ is the reference URL. The output is returned in JSON format, with the “status” parameter indicating “success”, “permission denied”, or “error”. The user must be logged in to use this command. One can use the id of the event instead of the ivorn if so desired by using eventid=id_of_event. Also, one can specify a particular revision by adding revision=revision_number.</p>
+</section>
+<section id="uploading-an-event-to-the-registry">
+<h3 id="uploading-an-event-to-the-registry">Uploading an event to the registry<a class="headerlink" href="#uploading-an-event-to-the-registry" title="Link to this heading">¶</a></h3>
+<p>Uploading via the web interface is also done via a multipart HTTPS POST to <a class="reference external" href="https://www.lmsal.com/hek/her/voeupload">https://www.lmsal.com/hek/her/voeupload</a> with the uploadedFile parameter set to the contents of the file.</p>
+<p><strong>Example</strong></p>
+<p>The following is an example of a Flare VOEvent XML <a class="reference external" href="http://www.lmsal.com/hek/her?cmd=export-voevent&amp;cosec=1&amp;ivorn=ivo://helio-informatics.org/FL_SSWLatestEvents_20090704_053406_gev_20090704_0246_V1p0">http://www.lmsal.com/hek/her?cmd=export-voevent&amp;cosec=1&amp;ivorn=ivo://helio-informatics.org/FL_SSWLatestEvents_20090704_053406_gev_20090704_0246_V1p0</a></p>
+<p>Download it and modify some of the fields (e.g. FRM_Name, FRM_Contact, FRM_Institute etc). Suppose the file is saved as Test.xml. Now try to upload it with the following curl command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">b</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">cookiemonster</span><span class="o">/</span><span class="n">cookiejar</span><span class="o">.</span><span class="n">txt</span> <span class="o">-</span><span class="n">F</span> <span class="n">uploadedFile</span><span class="o">=</span><span class="nd">@Test</span><span class="o">.</span><span class="n">xml</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">lmsal</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">hek</span><span class="o">/</span><span class="n">her</span><span class="o">/</span><span class="n">voeupload</span>
+</pre></div>
+</div>
+<p>Upon successful import, you will get the message “Successfully imported XML”. If you now go to <a class="reference external" href="http://www.lmsal.com/hek/her?cmd=home">http://www.lmsal.com/hek/her?cmd=home</a>, you should see your new submission.</p>
+<p>For details about the VOEvent XML specification for the Heliophysics Events Knowledgebase, go to <a class="reference external" href="http://www.lmsal.com/helio-informatics/hpkb/voevent.html">http://www.lmsal.com/helio-informatics/hpkb/voevent.html</a>. The full list of VOEvent types and attributes can be found at <a class="reference external" href="http://www.lmsal.com/hek/VOEvent_Spec.html">http://www.lmsal.com/hek/VOEvent_Spec.html</a>.</p>
+</section>
+<section id="posting-a-revised-event-to-the-registry">
+<h3 id="posting-a-revised-event-to-the-registry">Posting a revised event to the registry<a class="headerlink" href="#posting-a-revised-event-to-the-registry" title="Link to this heading">¶</a></h3>
+<p>Revising an event via the web interface is also done via a multipart HTTPS POST to <a class="reference external" href="https://www.lmsal.com/hek/her/voerevise">https://www.lmsal.com/hek/her/voerevise</a> with the uploadedFile parameter set to the contents of the file.</p>
+<p>Make sure that Event_IVORN of the revising XML matches the Event_IVORN of the entry to be revised.</p>
 </section>
 <section id="reporting-relations-between-events-features">
 <h3 id="reporting-relations-between-events-features">Reporting relations between events/features<a class="headerlink" href="#reporting-relations-between-events-features" title="Link to this heading">¶</a></h3>
@@ -302,8 +608,8 @@ web application lets users query the Heliophysics Events Registry (HER) in an in
 </tr>
 </tbody>
 </table>
-<p>Users can report relations with the verbs causes and is_associated_with. For example, a researcher who has published a paper establishing the causal relationship or association between an Emerging Flux event and a Filament Eruption event can submit the relation EF causes FE. If the causal relationship was determined to be tentative, the relation EF is_associated_with FE should be used instead.</p>
-<p>Relations using the verb contains are not to be submitted by users since HER already has the temporal and spatial information to determine/test these relationships. Since these two types of relations are rather commonplace, the cost of storage of all relations of these types will likely be too expensive (relative to testing the relations on the fly). In some case, however, it may be worth storing such relations. For example, it may be worth storing results of the complex query “Find ARs in CHs”.</p>
+<p>Users can report relations with the verbs causes and <em>is_associated_with</em>. For example, a researcher who has published a paper establishing the causal relationship or association between an Emerging Flux event and a Filament Eruption event can submit the relation EF <em>causes</em> FE. If the causal relationship was determined to be tentative, the relation EF <em>is_associated_with</em> FE should be used instead.</p>
+<p>Relations using the verb <em>contains</em> are not to be submitted by users since HER already has the temporal and spatial information to determine/test these relationships. Since these two types of relations are rather commonplace, the cost of storage of all relations of these types will likely be too expensive (relative to testing the relations on the fly). In some case, however, it may be worth storing such relations. For example, it may be worth storing results of the complex query “Find ARs in CHs”.</p>
 <p>To report an edge, you must provide both IVORNS for A and B (labeled ‘ivorn1’ and ‘ivorn2’ in the URL), edge_type (must be a “verb” from the above list).</p>
 <p>Optionally you may provide edge_strength (a real number in [0,1]). You may omit it (assumes a strength of 1, which is how the splits, merges, follows relations from automated methods are generally done).</p>
 <p>Examples:</p>
