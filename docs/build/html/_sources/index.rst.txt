@@ -13,7 +13,6 @@ HEK: Heliophysics Events Registry Web API
 
 Introduction
 ============
-
 .. image:: HER_arch.jpg
    :width: 600
 
@@ -433,4 +432,14 @@ Examples::
 or using curl:: 
 
     curl -k -b /tmp/cookiejar.txt -d cmd=create_edge -d cosec=2 -d "ivorn1=ivo://helio-informatics.org/AR_SPoCA_20140508_034716_20140508T032848_5&ivorn2=ivo://helio-informatics.org/AR_SPoCA_20140508_074820_20140508T072848_4&edge_type=is_followed_by" https://www.lmsal.com/hek/her/heks 
+
+
+Other links
+===========
+.. toctree::
+  :maxdepth: 2
+  :hidden:
+  
+  hek_api
+  HCRSearchConfigForAPI
 

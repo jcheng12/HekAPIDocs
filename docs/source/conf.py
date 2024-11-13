@@ -8,7 +8,7 @@
 
 project = 'HEK'
 copyright = '2024, Test'
-author = 'Test'
+author = 'Justin Cheng'
 release = ''
 
 # -- General configuration ---------------------------------------------------
@@ -25,6 +25,9 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 #html_theme = 'alabaster'
-#html_theme = "sphinx_rtd_theme"
+html_theme = "sphinx_rtd_theme"
 html_theme='sphinx_material'
 html_static_path = ['_static']
+html_sidebars = {
+    "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
+}

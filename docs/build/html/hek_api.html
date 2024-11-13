@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>Heliophysics Events Knowledgebase API Documentation &#8212; HEK  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=83e35b93" />
+    <link rel="stylesheet" type="text/css" href="_static/material.css?v=79c92029" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="HCR Search Config Table" href="HCRSearchConfigForAPI.html" />
+    <link rel="prev" title="HEK: Heliophysics Events Registry Web API" href="index.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=blue-grey data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#hek_api" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="index.html" title="HEK  documentation"
+           class="md-header-nav__button md-logo">
+          
+            &nbsp;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">HEK  documentation</span>
+          <span class="md-header-nav__topic"> Heliophysics Events Knowledgebase API Documentation </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="search.html" method="get" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = ""versions.json"",
+        target_loc = "../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="index.html" class="md-tabs__link">HEK  documentation</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="index.html" title="HEK documentation" class="md-nav__button md-logo">
+      
+        <img src="_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="index.html"
+       title="HEK documentation">HEK  documentation</a>
+  </label>
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> Heliophysics Events Knowledgebase API Documentation </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">Heliophysics Events Knowledgebase API Documentation</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#hek-api--page-root" class="md-nav__link">Heliophysics Events Knowledgebase API Documentation</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#introduction" class="md-nav__link">Introduction</a>
+        </li>
+        <li class="md-nav__item"><a href="#return-type-parameters" class="md-nav__link">Return Type Parameters</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#outformat" class="md-nav__link">Outformat</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#selection-parameters" class="md-nav__link">Selection Parameters</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#instrument" class="md-nav__link">Instrument</a>
+        </li>
+        <li class="md-nav__item"><a href="#instrument-specific-filters-terms" class="md-nav__link">Instrument-specific filters/terms</a>
+        </li>
+        <li class="md-nav__item"><a href="#more-detail-on-the-working-of-special-terms" class="md-nav__link">More detail on the working of “special” terms</a>
+        </li>
+        <li class="md-nav__item"><a href="#how-overlapping-observations-are-computed" class="md-nav__link">HOW OVERLAPPING OBSERVATIONS ARE COMPUTED</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#examining-search-results" class="md-nav__link">Examining search results</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#correlation-results-in-json" class="md-nav__link">Correlation Results in JSON</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#other-notes" class="md-nav__link">Other notes</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#her-events-search" class="md-nav__link">HER events search</a>
+        </li>
+        <li class="md-nav__item"><a href="#other-hcr-commands-for-observation-viewing" class="md-nav__link">Other HCR Commands for observation viewing</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#previous-hcr-apis" class="md-nav__link">Previous HCR APIs</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#old-iris-api" class="md-nav__link">Old IRIS API</a>
+        </li>
+        <li class="md-nav__item"><a href="#legacy-hcr-api" class="md-nav__link">Legacy HCR API</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="_sources/hek_api.rst.txt">Show Source</a> </li>
+
+  </ul>
+</nav>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="HCRSearchConfigForAPI.html" class="md-nav__link">HCR Search Config Table</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#hek-api--page-root" class="md-nav__link">Heliophysics Events Knowledgebase API Documentation</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#introduction" class="md-nav__link">Introduction</a>
+        </li>
+        <li class="md-nav__item"><a href="#return-type-parameters" class="md-nav__link">Return Type Parameters</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#outformat" class="md-nav__link">Outformat</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#selection-parameters" class="md-nav__link">Selection Parameters</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#instrument" class="md-nav__link">Instrument</a>
+        </li>
+        <li class="md-nav__item"><a href="#instrument-specific-filters-terms" class="md-nav__link">Instrument-specific filters/terms</a>
+        </li>
+        <li class="md-nav__item"><a href="#more-detail-on-the-working-of-special-terms" class="md-nav__link">More detail on the working of “special” terms</a>
+        </li>
+        <li class="md-nav__item"><a href="#how-overlapping-observations-are-computed" class="md-nav__link">HOW OVERLAPPING OBSERVATIONS ARE COMPUTED</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#examining-search-results" class="md-nav__link">Examining search results</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#correlation-results-in-json" class="md-nav__link">Correlation Results in JSON</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#other-notes" class="md-nav__link">Other notes</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#her-events-search" class="md-nav__link">HER events search</a>
+        </li>
+        <li class="md-nav__item"><a href="#other-hcr-commands-for-observation-viewing" class="md-nav__link">Other HCR Commands for observation viewing</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#previous-hcr-apis" class="md-nav__link">Previous HCR APIs</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#old-iris-api" class="md-nav__link">Old IRIS API</a>
+        </li>
+        <li class="md-nav__item"><a href="#legacy-hcr-api" class="md-nav__link">Legacy HCR API</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="_sources/hek_api.rst.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section id="heliophysics-events-knowledgebase-api-documentation">
+<h1 id="hek-api--page-root">Heliophysics Events Knowledgebase API Documentation<a class="headerlink" href="#hek-api--page-root" title="Link to this heading">¶</a></h1>
+<section id="introduction">
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p>The Heliophysics Events Knowledgebase (HEK) is a database of solar observations and events. This document describes much of the search API for the web service. The HEK comprises the Heliophysics Coverage Registry (HCR) and Event Registry (HER). HCR contains records of instrument observations (abbreviated “obs” frequently here and in the linked documents).</p>
+<p>This covers the search URL and webservice for the combined HCR + HER registries based at <a class="reference external" href="http://www.lmsal.com/hek/hcr?cmd=search-events-corr">http://www.lmsal.com/hek/hcr?cmd=search-events-corr</a> and is the main API used by <a class="reference external" href="http://www.lmsal.com/heksearch/">http://www.lmsal.com/heksearch/</a> and <a class="reference external" href="http://iris.lmsal.com/search/">http://iris.lmsal.com/search/</a>. See <a class="reference external" href="http://www.lmsal.com/hek/software/doc/HEKSearchToolNotes.pdf">http://www.lmsal.com/hek/software/doc/HEKSearchToolNotes.pdf</a> and <a class="reference external" href="http://www.lmsal.com/hek/software/doc/IRISSearchToolNotes.pdf">http://www.lmsal.com/hek/software/doc/IRISSearchToolNotes.pdf</a> for guides on the graphical search tools. This document is intended for groups that want to build their own search clients, general users looking for data should probably just use the graphical tools. (Developers should play around with the graphical tools too a lot of the content can be more intuitively grasped from use then refer to this document for details on particular terms/fields. And using the “export” links can clarify the syntax). The API focuses on the HCR portion, the HER portion has an established site at <a class="reference external" href="http://www.lmsal.com/hek/api.html">http://www.lmsal.com/hek/api.html</a>.</p>
+</section>
+<section id="return-type-parameters">
+<h2 id="return-type-parameters">Return Type Parameters<a class="headerlink" href="#return-type-parameters" title="Link to this heading">¶</a></h2>
+<section id="outformat">
+<h3 id="outformat">Outformat<a class="headerlink" href="#outformat" title="Link to this heading">¶</a></h3>
+<p>Controls how the results of the query are presented; supported values:</p>
+<ol class="upperalpha simple">
+<li><p><strong>count:</strong> returns simply the number of observations (of the primary instrument). IE “outputformat=count”.</p></li>
+<li><p><strong>json:</strong> The primary output format, returning json lists. A list of common keywords with some definition is an appendix to this document.</p></li>
+<li><p><strong>jsonMedium</strong>: same structure as ‘json’ but smaller number of fields for each result returned.</p></li>
+<li><p><strong>jsonSmall/jsonLight</strong>: same again, the smallest collection of fields. Both this and jsonMedium were written specifically for speeding up the graphical search engines; would discourage use in SSW or other clients getting data for analysis.</p></li>
+</ol>
+<p>“getdistinct” : Takes as a value a single search term name, which must be of “multior” type (see below). When this is used, instead of returning full list of results, it returns a set of all values of that search term (also the “outputformat” parameter is ignored). This can be used with any combination of filters, so omitting other conditions can get all values over the whole mission, or only values matching some specific conditions. The heksearch/IRIS search web applications use this to populate and update the dropdowns of some specific fields such as the obsId and target.</p>
+<p>Example:
+<a class="reference external" href="http://lmsal.com/hek/hcr?cmd=search-events-corr&amp;outputformat=jsonMedium&amp;startTime=2015-12-02T00:00&amp;stopTime=2016-02-23T00:00&amp;instrument=SOTSP&amp;getdistinct=target">http://lmsal.com/hek/hcr?cmd=search-events-corr&amp;outputformat=jsonMedium&amp;startTime=2015-12-02T00:00&amp;stopTime=2016-02-23T00:00&amp;instrument=SOTSP&amp;getdistinct=target</a></p>
+</section>
+</section>
+<section id="selection-parameters">
+<h2 id="selection-parameters">Selection Parameters<a class="headerlink" href="#selection-parameters" title="Link to this heading">¶</a></h2>
+<p>All other URL parameters govern the selection of which results to present. In general, the search is a logical AND on each filter provided.</p>
+<section id="instrument">
+<h3 id="instrument">Instrument<a class="headerlink" href="#instrument" title="Link to this heading">¶</a></h3>
+<p>Details the primary instrument of the search. We support IRIS and the four Hinode instruments (SOT, SOTSP, EIS, XRT).</p>
+</section>
+<section id="instrument-specific-filters-terms">
+<h3 id="instrument-specific-filters-terms">Instrument-specific filters/terms<a class="headerlink" href="#instrument-specific-filters-terms" title="Link to this heading">¶</a></h3>
+<p>The SearchConfig spreadsheet (<a class="reference external" href="https://www.lmsal.com/hpkb/doc?cmd=dcur&amp;proj_num=HPKB00032&amp;file_type=pdf">HCRSearchConfigForAPI.pdf</a>) has a list of all the supported instrument-specific search filters. These largely work on attributes of the observation like field of view, type of images taken, etc., but also include some of the planner annotations. This outline is a more detailed guide to understanding the columns of the filter configuration.</p>
+<ol class="arabic simple">
+<li><p><strong>inUrlName</strong> – text tag in a URL client uses. All of these filters are specified as URL parameters. An example URL segment with four filters is &amp;obsId=3620167602&amp;maxsjiFOVY=80&amp;mincadMeanPlannedSJI1400=10&amp;hasData=true</p></li>
+<li><p><strong>SearchCriteria</strong> – how values are applied</p>
+<ul class="simple">
+<li><p>Minmax – numeric values. ‘min’ and ‘max’ are appended to the name in column A, so a search on HPC-X coordinate could be “&amp;minXcen=200&amp;maxXcen=700”. Of course, it is valid to provide only one of the min or max as well.</p></li>
+<li><p>Multior – can be numeric or text. Can provide one or more values (multiple values in comma separated), such as obswheel4=0,20000,100000; the filter performs an OR search on each value provided. Note the “getdistinct=&lt;column name&gt;” can be used to get possible values for these columns (see above)</p></li>
+<li><p>“Special” – a handful of filters work differently than either min/max or multior, they are explained below.</p></li>
+</ul>
+</li>
+<li><p><strong>Observation or Group</strong>: If Observation, the filter is an attribute of the whole HCR entry/”observation”; if Group it’s a property of a specific Group. Groups are subsets of operations corresponding to a particular data type, most commonly for all images taken with a particular filter or wavelength. HCR observations can have any number (including zero, although that’s a small minority of our records) groups.</p></li>
+<li><p>The tag that the data used by this filter is returned as.</p>
+<ul class="simple">
+<li><p>Name of the relevant group if it’s a Group filter</p></li>
+<li><p>Corresponding FITS keyword for some terms (has no functional significance to search API, but informationally useful for users looking at the data).</p></li>
+<li><p>Type of value. Booleans should be, for example, &amp;hasData=true or &amp;hasData=false.</p></li>
+<li><p>Instrument(s) filter applies to. A large number of these are IRIS-only.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="more-detail-on-the-working-of-special-terms">
+<h3 id="more-detail-on-the-working-of-special-terms">More detail on the working of “special” terms<a class="headerlink" href="#more-detail-on-the-working-of-special-terms" title="Link to this heading">¶</a></h3>
+<p><strong>“startTime”</strong> &amp; <strong>“stopTime”</strong> are required on every search. API returns results spanning any portion of the interval defined, so if stopTime=2013-10-11T00:00 then an observation from 2013-10-10T23:00 to 2013-10-11T01:00 is returned.
+<strong>“obsDesc”</strong> does a free text search on the planner’s description &amp; other related fields including some text describing the observation program.
+<strong>“obsDescEIS”</strong> &amp; <strong>“obsDescSOT”</strong> are similar, because of different planning systems the set of fields referenced for each for these two instruments are slightly different.
+<strong>“hasdata”</strong> refers to the compressed, science-quality level2 data for IRIS. Typically this final data production lags 3-5 days behind the quicklook events.
+<strong>“specWindows”</strong> – A list of line names within the IRIS spectral ranges. Supply a comma-separated list and the search tool finds observations containing all of them (a logical AND on multiple window types).</p>
+<p>The supported names are: (note this search tool order had a more-common and less-common group, that’s why not strictly in wavelength order):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">"Mg II k 2796"</span><span class="p">,</span> <span class="s2">"Mg II h 2803"</span><span class="p">,</span> <span class="s2">"C II 1335"</span><span class="p">,</span> <span class="s2">"C II 1336"</span><span class="p">,</span> <span class="s2">"Fe XII 1349"</span><span class="p">,</span> <span class="s2">"C I 1354"</span><span class="p">,</span> <span class="s2">"Fe XXI 1354"</span><span class="p">,</span> <span class="s2">"O I 1356"</span><span class="p">,</span> <span class="n">C</span> <span class="n">I</span> <span class="mi">1356</span><span class="s2">", Si IV 1394"</span><span class="p">,</span> <span class="s2">"O IV 1400"</span><span class="p">,</span>  <span class="s2">"O IV 1401"</span><span class="p">,</span> <span class="s2">"Si IV 1403"</span><span class="p">,</span>      <span class="s2">"S I 1334"</span><span class="p">,</span><span class="s2">"Ni II 1335"</span><span class="p">,</span> <span class="s2">"O IV 1339"</span><span class="p">,</span> <span class="n">Ni</span> <span class="n">II</span> <span class="mi">1340</span><span class="s2">", "</span><span class="n">Ni</span> <span class="n">II</span> <span class="mi">1346</span><span class="s2">", "</span><span class="n">Cl</span> <span class="n">I</span> <span class="mi">1352</span><span class="s2">", "</span><span class="n">C</span> <span class="n">I</span> <span class="mi">1357</span><span class="s2">", "</span><span class="n">C</span> <span class="n">I</span> <span class="mi">1358</span><span class="s2">", "</span><span class="n">O</span> <span class="n">I</span> <span class="mi">1359</span><span class="s2">", "</span><span class="n">Fe</span> <span class="n">II</span> <span class="mi">1392</span><span class="s2">", "</span><span class="n">S</span> <span class="n">I</span> <span class="mi">1393</span><span class="s2">", "</span><span class="n">Fe</span> <span class="n">II</span> <span class="mi">1393</span><span class="s2">", "</span><span class="n">Ni</span> <span class="n">II</span> <span class="mi">1393</span><span class="s2">", "</span><span class="n">S</span> <span class="n">I</span> <span class="mi">1396</span><span class="s2">", "</span><span class="n">O</span> <span class="n">IV</span> <span class="mi">1397</span><span class="s2">", "</span><span class="n">S</span> <span class="n">IV</span> <span class="mi">1398</span><span class="s2">", "</span><span class="n">Ni</span> <span class="n">II</span> <span class="mi">1399</span><span class="s2">", "</span><span class="n">Fe</span> <span class="n">II</span> <span class="mi">1400</span><span class="s2">", "</span><span class="n">S</span> <span class="n">I</span> <span class="mi">1402</span><span class="s2">", "</span><span class="n">S</span> <span class="n">IV</span> <span class="mi">1405</span><span class="s2">", "</span><span class="n">O</span> <span class="n">IV</span> <span class="mi">1405</span><span class="s2">", "</span><span class="n">Fe</span> <span class="n">II</span> <span class="mi">1406</span><span class="s2">", S IV 1406"</span><span class="p">};</span>
+</pre></div>
+</div>
+<p><strong>“herEvents”</strong> – takes a comma-separated list of the two letter event codes from the Heliophysics Events Registry (HER) (see <a class="reference external" href="http://www.lmsal.com/hek/VOEvent_Spec.html">http://www.lmsal.com/hek/VOEvent_Spec.html</a> for a listing of the abbreviations). Besides those, supports “c_fl”, “m_fl” and “x_fl” to denote flares of at least C1/M1/X1 GOES class. This geometry definition is true if there is any overlap between the observation and the event.</p>
+<p><strong>“annotated”</strong> –for IRIS observations only. If “true”, returns only IRIS events that have been annotated, which are generally the highlights of the week they were planned on.</p>
+<p><strong>“hasSdoCubes”</strong>, <strong>”hasSotCubes”</strong>, <strong>”hasCruiser”</strong> – if set to “true”, returns only observations with the corresponding auxiliary data product. Only for IRIS obs. See ITN 32 on <a class="reference external" href="http://iris.lmsal.com/documents.html">http://iris.lmsal.com/documents.html</a> for more information on those products.</p>
+<p><strong>“hasBBSO”</strong> – for a limited subset of IRIS obs coordinated with the Big Bear Solar Observatory, if “true” returns only those IRIS obs. They will have a link to a BBSO page for the corresponding ground-based observation summary.</p>
+<p><strong>“hasDataALMA”</strong></p>
+<p><strong>“hasSSTCubes” – if “true” returns.</strong> Note that while IRIS performs many obervations each year in coordination with SST, only a small number (16?) of SST datasets have been processed for this</p>
+<p><strong>optionalcorr=</strong>, <strong>requiredcorr=</strong> - These are the main parameters to specify joint searches between instruments. By “correlated” we mean observations from different instruments must have some overlap in space and time.</p>
+<p>Under the current system, your specific filters apply to the “primary” instrument and no additional filters on the correlated instruments. We may extend the system.
+If you have this segment in your search URL:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">instrument</span><span class="o">=</span><span class="n">IRIS</span><span class="o">&amp;</span><span class="n">optionalcorr</span><span class="o">=</span><span class="n">SOTSP</span><span class="o">&amp;</span><span class="n">requiredcorr</span><span class="o">=</span><span class="n">EIS</span>
+</pre></div>
+</div>
+<p>The API will look for IRIS obs which each must have an EIS obs overlapping. The data for these EIS obs is returned as well as the IRIS obs. If any SOTSP obs also overlap the IRIS results, those are included as well. Users can repeat the optionalcorr and requirecorr parameters multiple times to cover all the supported instruments.</p>
+</section>
+<section id="how-overlapping-observations-are-computed">
+<h3 id="how-overlapping-observations-are-computed">HOW OVERLAPPING OBSERVATIONS ARE COMPUTED<a class="headerlink" href="#how-overlapping-observations-are-computed" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>All entries (both HCR observations, HER events/features) get a HPC geometry polygon.</p>
+<ul class="simple">
+<li><p>For HER events, the chaincode is used if provided. If not, the bounding box is used.</p></li>
+<li><p>HER events can be submitted in HRC, HGS, HGC as well but all coordinate/spatial fields are converted to HPC on ingest; that is what is used.</p></li>
+<li><p>Some HER flare providers do not give a boundbox or extent. For these events a boundbox is estimated with size based on the GOES class.</p></li>
+<li><p>For HCR events, all observations get a field of view definition. For IRIS it is the ‘total FOV’ – SJI readout size combined with raster motion. Also the roll angle is applied for IRIS if it was rolled. For Hinode SOTFG and XRT events with multiple fields of view in different modes, the union is used (but, for XRT we exclude the full disk modes).</p></li>
+<li><p>If solar rotation tracking was enabled in the observation, compute the observation center HPC coordinates at the observation endtime using SRT formula. Create a second boundbox based on same FOV and rotated center point. Then the geometry becomes a polygon using the “convex hull” – smallest convex polygon where all points are on boundary or contained within.</p></li>
+</ul>
+</li>
+<li><p>Scan over all HCR-HCR pairs, and HER-HCR pairs. For the time being we do not support overlapping event-event searches. For each pair of entries A, B (where A is either HCR or HER, B is HCR):</p>
+<ul class="simple">
+<li><p>All entries have a start and end time, check if the time ranges of A, B overlap.</p></li>
+<li><p>If so, check if geometry overlaps between A, B</p></li>
+<li><p>If both types overlap, compute a geometry score defined as the larger of  (area of intersection of A, B ) / (area of A) and (area of intersection) / (area of B). The areas are in HPC square arcsec, not projected.</p></li>
+<li><p>Compute time score in analogous fashion.</p></li>
+<li><p>When storing the correlation, also check if the event coo. Note that for observations this point is always the center of the boundbox, but for HER events there are some automated feature finding algorithms that provide chaincodes and the event point is not necessarily the center of the chaincode.</p></li>
+</ul>
+</li>
+<li><p>The geometries from step 1 for all of these pairs are also compared, and overlapping regions computed.</p></li>
+</ol>
+<p>Note that there are approximations made, particularly with certain flare sizes, and when two entries have significantly different start times with rotation tracking there may be false positives. We provide this as a data discovery tool; scientific users should co-align the data themselves if they are doing detailed analysis. Also the current implementation does not apply SRT to HER entries currently but will in the future. (The “events” in the HER are largely short enough that it would be minor, but there are “feature” entries for AR, CH,SS that last several hours to a day and would be affected significantly.)  In the future we may also transform geometries to Carrington coordinates where possible to make the rotation more precise. Event providers to HER may follow different standards of event durations. In particular this is an issue for flares, different modules may report different start and (especially) end times, which can affect whether an overlap is detected.</p>
+</section>
+</section>
+<section id="examining-search-results">
+<h2 id="examining-search-results">Examining search results<a class="headerlink" href="#examining-search-results" title="Link to this heading">¶</a></h2>
+<p>This section gives a brief explanation of our JSON return format (please see <a class="reference external" href="https://www.json.org/">https://www.json.org/</a> if unfamiliar with JSON). The two main nestings in our results are “Events” and “Groups” (see the notes for column C above). Both HCR observations and HER events are labeled “Events” in the JSON. Only HCR observations can have Groups.</p>
+<p>List of common json keys for HCR:
+Presenting this list with example values. The HER return format is similar and is at <a class="reference external" href="https://hekapidocs.readthedocs.io/en/latest/">https://hekapidocs.readthedocs.io/en/latest/</a>. In the future there will be a linked document with an exhaustive list of all keys but these are the most common/useful.</p>
+<p>The unique identifier in the HCR is the “eventId”, which is a IVORN (see <a class="reference external" href="http://wiki.ivoa.net/twiki/bin/view/IVOA/ResourceNameSemantics">http://wiki.ivoa.net/twiki/bin/view/IVOA/ResourceNameSemantics</a>). Generally our IVORNS are made from the instrument and start time of the observation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">"eventId"</span><span class="p">:</span> <span class="s2">"ivo://sot.lmsal.com/VOEvent#VOEvent_IRIS_20131014_113941_ 3860257107_2013-10-14T11:39:412013-10-14T11:39:41.xml"</span>
+</pre></div>
+</div>
+<p>The corresponding event summary page will be found at
+<a class="reference external" href="http://www.lmsal.com/hek/hcr?cmd=view-event&amp;event">http://www.lmsal.com/hek/hcr?cmd=view-event&amp;event</a>-id=&lt;value of “eventId”&gt;</p>
+<p>However the “://” in the IVORN part of that URL, as well as the ‘#’, often needs escaping, such as this (browsers may not strictly need to escape the ‘://’ but may do it anyways):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>http://www.lmsal.com/hek/hcr?cmd=view-event&amp;event-id=ivo%3A%2F%2Fsot.lmsal.com%2FVOEvent%23VOEvent_IRIS_20131014_113941_3860257107_2013-10-14T11:39:412013-10-14T11:39:41.xml
+</pre></div>
+</div>
+<p><strong>“eventKey”: 1234575</strong> – this is unique integer ID of the event, used as the key in correlations.</p>
+<p><strong>“instrument”</strong>, <strong>“startTime”</strong>, <strong>“stopTime”</strong> – same as in the search filters.</p>
+<p><strong>“xCen”: “105”</strong>, <strong>“yCen”: “-400”</strong> – These give the coordinates of the center of the observation at its start time, in HPC arcseconds.</p>
+<p><strong>“xFov”: “95.0”</strong>, <strong>“yFov” : “66.0”</strong> – gives field of view, also in HPC-arcseconds. Note these are in the groups as well – some HCR instruments take different types of data with different fields of view.</p>
+<p><strong>“raster_fovx”</strong>, <strong>“raster_fovy”</strong>, <strong>“sji_fovx”</strong>, <strong>“sji_fovy”</strong> – for IRIS, give specific breakdown of the field of view. The overall field of view sums raster + sji in the X direction but uses just one of the Y direction (for all IRIS non-calibration obs the two fovy’s should be the same).</p>
+<p><strong>“roll_angle” : “-90”</strong> - also IRIS only, roll at time of observation. In degrees, IRIS can roll from -90 to +90 deg.</p>
+<p><strong>“num_images” : “300”</strong> – number of images in a group.</p>
+<p><strong>“cadence_avg_asplanned” : “20.5”</strong> – for IRIS, time between images in a group (in seconds).</p>
+<p><strong>“target” : “QS”</strong> – planner’s target for the observation. Besides the event codes in the HER, we use “QS” for quiet sun.</p>
+<p><em>“umodes” : “XRT Open Gband, XRT Al_poly Open, 256 x 256, 512 x 512”</em> - For Hinode instruments, a list of group names.</p>
+<section id="correlation-results-in-json">
+<h3 id="correlation-results-in-json">Correlation Results in JSON<a class="headerlink" href="#correlation-results-in-json" title="Link to this heading">¶</a></h3>
+<p>If using the optionalcorr and/or requiredcorr parameters, after the set of all Events in the result there will be another set:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>“Correlations": [
+  {
+    "key1": 3331467,
+    "time_overlap": 1,
+    "key2": 3340833,
+    "score": 0.3057028254999372,
+    "type2": "XRT",
+    "reg1": "HCR",
+    "ivorn2": "ivo://sot.lmsal.com/VOEvent#VOEvent_ObsX2018-05-15T17:28:30.000.xml",
+    "reg2": "HCR",
+    "ivorn1": "ivo://sot.lmsal.com/VOEvent#VOEvent_IRIS_20180515_170318_3640106077_2018-05-15T17:03:182018-05-15T17:03:18.xml",
+    "type1": "IRIS",
+    "spatial_overlap": 0.9760187660508767},
+    {
+    "key1": 8408656,
+    "key2": 3301566,
+    "score": 1,
+    "type2": "IRIS",
+    "reg1": "HER",
+    "ivorn2": "ivo://sot.lmsal.com/VOEvent#VOEvent_IRIS_20180428_184020_3690015104_2018-04-28T18:40:202018-04-28T18:40:20.xml",
+    "reg2": "HCR",
+    "ivorn1": "ivo://helio-informatics.org/ER_IRIS_SG_C_II_KathyReeves_20180430_185912",
+    "type1": "ER"
+  },
+]
+</pre></div>
+</div>
+<p>This denotes an edge between two entries in the Events results. The “key” and “ivorn” tags ID which events are involved, “reg” and “type” denote whether HCR/HER and either Instrument (HCR) or Event Type (HER). Overlaps and scores show how good of a spatial match they are.</p>
+</section>
+</section>
+<section id="other-notes">
+<h2 id="other-notes">Other notes<a class="headerlink" href="#other-notes" title="Link to this heading">¶</a></h2>
+<p>Results currently limited to 400 per query on full searches, but can go higher if using outputformats jsonLight/jsonMedium. If doing correlated searches, the number of “rows” will go down as the limit is shared across the instruments.</p>
+<p>Typically, about 11 observations are done per day on IRIS; as of October 2024 IRIS is over 44,000 as it recently passed 11 years on in operation. Hinode instruments typically have a bit fewer per day.</p>
+<section id="her-events-search">
+<h3 id="her-events-search">HER events search<a class="headerlink" href="#her-events-search" title="Link to this heading">¶</a></h3>
+<p><a class="reference external" href="http://www.lmsal.com/hek/hcr?cosec=2&amp;cmd=search-her&amp;type=column">http://www.lmsal.com/hek/hcr?cosec=2&amp;cmd=search-her&amp;type=column</a></p>
+<p>As part of the work to allow joint observation/event searches, the HER API functionality was ported to the HCR. Goal was to leave the original HER event search unchanged as the new one is enhanced (We did not want to change the legacy ISolSearch webpage or the SSW API). The main format is identical to that of the current HER API based at <a class="reference external" href="http://www.lmsal.com/hek/her">http://www.lmsal.com/hek/her</a>?cosec=2&amp;cmd=search&amp;type=column&amp; (Again, there are legacy clients we wanted to leave unchanged, as some of them like the SunPy API we do not have control over). That API is described at <a class="reference external" href="https://hekapidocs.readthedocs.io/en/latest/">https://hekapidocs.readthedocs.io/en/latest/</a></p>
+<p>Compared to the old HER format, the new one takes additional parameters:
+optionalcorr, requiredcorr – taking HCR instrument classes and adding coaligned observations.  Works analogously to how observation-observation correlations are done &amp; described above.</p>
+</section>
+<section id="other-hcr-commands-for-observation-viewing">
+<h3 id="other-hcr-commands-for-observation-viewing">Other HCR Commands for observation viewing<a class="headerlink" href="#other-hcr-commands-for-observation-viewing" title="Link to this heading">¶</a></h3>
+<p>View recent summaries: <a class="reference external" href="http://www.lmsal.com/hek/hcr?cmd=view-recent-events&amp;instrument=iris">http://www.lmsal.com/hek/hcr?cmd=view-recent-events&amp;instrument=iris</a></p>
+<p>View obs summary page (either planning or observation) with example IVORN: <a class="reference external" href="http://www.lmsal.com/hek/hcr?cmd=view-event&amp;event-id=ivo%3A%2F%2Fsot.lmsal.com%2FVOEvent%23VOEvent_IRIS_20180119_133521_3610108077_2018-01-19T13%3A35%3A212018-01-19T13%3A35%3A21.xml">http://www.lmsal.com/hek/hcr?cmd=view-event&amp;event-id=ivo%3A%2F%2Fsot.lmsal.com%2FVOEvent%23VOEvent_IRIS_20180119_133521_3610108077_2018-01-19T13%3A35%3A212018-01-19T13%3A35%3A21.xml</a></p>
+<p>Get JSON for an individual obs (IRIS only): <a class="reference external" href="http://www.lmsal.com/hek/hcr?cmd=json-for-event&amp;event-id=ivo%3A%2F%2Fsot.lmsal.com%2FVOEvent%23VOEvent_IRIS_20180119_133521_3610108077_2018-01-19T13%3A35%3A212018-01-19T13%3A35%3A21.xml">http://www.lmsal.com/hek/hcr?cmd=json-for-event&amp;event-id=ivo%3A%2F%2Fsot.lmsal.com%2FVOEvent%23VOEvent_IRIS_20180119_133521_3610108077_2018-01-19T13%3A35%3A212018-01-19T13%3A35%3A21.xml</a></p>
+</section>
+</section>
+<section id="previous-hcr-apis">
+<h2 id="previous-hcr-apis">Previous HCR APIs<a class="headerlink" href="#previous-hcr-apis" title="Link to this heading">¶</a></h2>
+<section id="old-iris-api">
+<h3 id="old-iris-api">Old IRIS API<a class="headerlink" href="#old-iris-api" title="Link to this heading">¶</a></h3>
+<p><em>http://www.lmsal.com/hek/hcr?cmd=search-events3&amp;</em></p>
+<p>This is still used by <a class="reference external" href="http://iris.lmsal.com/search/">http://iris.lmsal.com/search/</a>. It was the early version of this newer API and will remain live for the time being to support SSW client methods; As of July 2017, the functionality should be identical to ‘search-events-corr’ with the following choices:</p>
+<ol class="arabic simple">
+<li><p>Instrument = IRIS (cannot be changed, IRIS only, also implicit in search-events3)</p></li>
+<li><p>No correlated instrument searches.</p></li>
+</ol>
+</section>
+<section id="legacy-hcr-api">
+<h3 id="legacy-hcr-api">Legacy HCR API<a class="headerlink" href="#legacy-hcr-api" title="Link to this heading">¶</a></h3>
+<p><a class="reference external" href="http://www.lmsal.com/hek/hcr?cmd=submit-search-events2">http://www.lmsal.com/hek/hcr?cmd=submit-search-events2</a>
+Basis of old graphical search tool at <a class="reference external" href="http://www.lmsal.com/hek/hcr?cmd=search-events2">http://www.lmsal.com/hek/hcr?cmd=search-events2</a></p>
+<p>Described at <a class="reference external" href="https://www.lmsal.com/sdodocs/doc?cmd=dcur&amp;proj_num=SDOD0046&amp;file_type=txt">https://www.lmsal.com/sdodocs/doc?cmd=dcur&amp;proj_num=SDOD0046&amp;file_type=txt</a></p>
+<p>This is the original LMSAL search tool, developed for the Solar-B/Hinode mission but does support all instruments in the HCR. In particular one must explicitly provide ‘select=&lt;term&gt;’ for each column/term. It does not allow any correlated observation/events searches.</p>
+</section>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="index.html" title="HEK: Heliophysics Events Registry Web API"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> "Previous" </span> HEK: Heliophysics Events Registry Web API </span>
+              </div>
+            </a>
+          
+          
+            <a href="HCRSearchConfigForAPI.html" title="HCR Search Config Table"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> "Next" </span> HCR Search Config Table </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2024, Test.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>
